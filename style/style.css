@@ -21,6 +21,7 @@
 {
     transform: scale(1.12);
 }
+
 /* menu section */
 #menu-bar{
     display: flex;
@@ -409,6 +410,8 @@ footer p{
     }
     .card{
         padding: 16px;
+        display: flex;
+        flex-direction: column;
     }
     .card-heder,.host-heder{
         font-size: 32px;
@@ -439,4 +442,64 @@ footer p{
     footer p{
     padding-bottom: 20px;
 }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .hero-circle{
+        transform: scale(0.80);
+        margin-bottom: 10px;
+    }
+    .hero-text .hero-heder{
+        font-size: 60px;
+    }
+    #hero{
+        padding: 10px;
+    }
+    .about{
+        padding-top: 0px;
+    }
+    .reting{
+        gap:30px;
+        padding-bottom: 30px;
+    }
+    .reting-hr{
+        margin:30px auto;
+    }
+    
+    .hero-button{
+        margin: 30px;
+    }
+    .choose-heder{
+        padding-top: 30px;
+    }
+    .box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .box-1,.box-2,.box-3,.box-4{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .card-heder{
+        padding: 30px;
+        font-size: 40px;
+    }
+    .card-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .host-heder{
+        padding-top: 20px;
+    }
+    footer{
+        background-size: cover;
+        background-position: center;
+    }
+    .footer-logo h1{
+        font-size: 70px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sosal{
+        max-width: 400px;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
